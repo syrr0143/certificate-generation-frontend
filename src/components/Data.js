@@ -25,7 +25,7 @@ export default function Data() {
       };
       const handleViewPdf = async (employee) => {
         try {
-          const response = await fetch(`${baseurl}/${employee.id}`);
+          const response = await fetch(`${baseurl}/certificateData/${employee.id}`);
           const result = await response.json();
       
           // Now you can navigate to the Certificate component with the data and intern ID
